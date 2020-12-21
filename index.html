@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Password Generator</h1>
+      </header>
+      <div class="card">
+        <div class="card-header">
+          <h2>Generate a Password</h2>
+        </div>
+        <div class="card-description">
+          <p>Need a secure password? Well friend, you're in luck. Just let this handy-dandy password generator know exactly what to include and it will spit out a super secure password, specially made for you.</p>
+        </div>
+        <div class="card-subheader">
+          <h4>Alright handy machine, here's what I need:</h4>
+        </div>
+        <form id="passwordForm" class="form">
+          <div class="characterContainer">
+            <label for="passwordLengthRange">Password Length (in characters)</label>
+            <input class="passwordLengthRange" type="range" min="8" max="128" value="10" class="slider" id="passwordLengthRange">
+            <input class="passwordLengthNumber" type="number" min="8" max="128" value="10" id="passwordLengthNumber">
+          </div>
+          <br />
+          <br />
+          <input type="checkbox" name="lowerCaseLetters" id="lowerCaseLetters" />
+          <label for="checkbox">Lower case letters</label>
+          <input type="checkbox" name="upperCaseLetters" id="upperCaseLetters" />
+          <label for="checkbox">Upper case letters</label>
+          <input type="checkbox" name="numbers" id="numbers" />
+          <label for="checkbox">Numbers</label>
+          <input type="checkbox" name="specialCharacters" id="specialCharacters" />
+          <label for="checkbox">Special characters</label>
+          <br />
+          <br />
+          <button id="generate" class="btn">Generate Password</button>
+        </form>
+        <div class="card-body">
+          <h3 id="passwordValue">Your Secure Password</h3>
+        </div>
+        <div class="card-footer">
+
+        </div>
+      </div>
+    </div>
+    <script src="javascript_2.js"></script>
+  </body>
+</html>
